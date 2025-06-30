@@ -1,0 +1,81 @@
+:root {
+  --primary: #0ff;
+  --bg: #0a0a0a;
+  --text: #fff;
+  --gradient: linear-gradient(145deg, #0ff, #00f6ff);
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(#0f0f1f, #000);
+  text-align: center;
+  position: relative;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  background: var(--gradient);
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--primary);
+  margin: 0 auto 20px;
+}
+
+.neon-text {
+  font-size: 2.5rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta {
+  padding: 12px 24px;
+  border: 2px solid var(--primary);
+  text-decoration: none;
+  color: var(--primary);
+  transition: background 0.3s;
+}
+.cta:hover {
+  background: var(--primary);
+  color: #000;
+}
+
+/* Glowing Skill Cards */
+.skill-card {
+  padding: 20px;
+  background: #111;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px var(--primary);
+}
+
+/* Timeline & Counters */
+.timeline {
+  height: 3px;
+  background: var(--primary);
+  animation: grow 3s ease forwards;
+}
+@keyframes grow {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.counter {
+  font-size: 2rem;
+  color: var(--primary);
+}

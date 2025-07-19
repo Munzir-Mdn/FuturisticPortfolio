@@ -7,7 +7,7 @@
 ---
 
 ## 🔥 Live Preview
-[View Live Site](https://munzir-mdn.github.io/FuturisticPortfolio/))
+[View Live Site]((https://munzir-mdn.github.io/FuturisticPortfolio/))
 
 ---
 
